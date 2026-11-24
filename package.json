@@ -19,7 +19,13 @@
     "email:send": "ts-node utils/emailSender.ts",
     "test:notify": "node scripts/run-tests-and-notify.js",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+     "test": "playwright test",
+    "test:chrome": "cross-env BROWSERS=chrome playwright test",
+    "test:chrome:headed": "cross-env BROWSERS=chrome HEADED=true playwright test",
+    "test:firefox": "cross-env BROWSERS=firefox playwright test",
+   "test:firefox:headed": "cross-env BROWSERS=firefox HEADED=true playwright test",
+    "report": "playwright show-report"
   },
   "keywords": [
     "playwright",
@@ -28,7 +34,7 @@
     "automation",
     "qa"
   ],
-  "author": "Suresh IT Academy",
+  "author": "Soha Tembe",
   "license": "UNLICENSED",
   "devDependencies": {
     "@playwright/test": "^1.48.0",

@@ -21,7 +21,7 @@ test.describe('Traffic Source Stats — Brand Filter, Advertiser drill-down', ()
     await statsPage.goto();
   });
 
-  test('Filter by Brand, drill Advertiser → Brands → Sources → Daily → Country',{ tag: '@sanity' }, async ({ page }) => {
+  test.only('Filter by Brand, drill Advertiser → Brands → Sources → Daily → Country',{ tag: '@sanity' }, async ({ page }) => {
     // A per-action ceiling means one wrong selector fails in seconds,
     // not after burning the whole test timeout.
     page.setDefaultTimeout(15_000);

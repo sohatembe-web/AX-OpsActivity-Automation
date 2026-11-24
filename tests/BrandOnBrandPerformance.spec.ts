@@ -127,3 +127,4 @@ test.describe('Brand Stats — Sort Net Revenue and Daily drill-down', () => {
     await dailyTab.waitForTimeout(1000);
   });
 });
+;

@@ -275,3 +275,5 @@ function renderHtml(m: Metrics, overallStatus: FullResult['status']): string {
 </body>
 </html>`;
 }
+
+///Test reporting ///

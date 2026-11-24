@@ -6,6 +6,8 @@
  * in here performs actions — see lib/General.ts and pages/*.ts for behavior.
  * ---------------------------------------------------------------------------
  */
+
+///Test data, URLs, timeouts, shared selectors  / The settings sheet: change data here, not in the tests///
 import 'dotenv/config';
 
 function env(name: string, fallback?: string): string {
@@ -80,6 +82,8 @@ export const SELECTORS = {
   calendarApplyButton: "//input[@class='btnapply']",
   accountManagerSearchInput: '#accmanager-filter-parent input.searchfield',
   brandSearchInput: '#brand_search_txt',
+  brandFilterPanel : '#brands-filter',
+  brandTypeSearchInput: '#brand_type_search_txt',
   dropdownChecklistLabel: 'label.ui-dropdownchecklist-text',
   dropdownChecklistOverlay: '.ui-dropdownchecklist-text',
 } as const;

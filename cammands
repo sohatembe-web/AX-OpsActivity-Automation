@@ -3,6 +3,8 @@ npx playwright test --project=sanity
 npx playwright test --project=integration
 npx playwright test --project=integration --no-deps
 
+npx playwright test tests/auth.setup.ts
+
 npx playwright test --grep @smoke
 npx playwright test --grep "@smoke|@sanity"   # run two tags together (regex OR)
 npx playwright test --grep-invert @integration  # run everything except integration
